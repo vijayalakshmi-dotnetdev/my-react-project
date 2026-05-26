@@ -1,0 +1,22 @@
+[
+    {
+        "name": "saravanan",
+        "age": 27,
+        "course": "React"
+    },
+    {
+        "name": "Ratheesh",
+        "age": 24,
+        "course": "Angular"
+    },
+    {
+        "name": "Nisha",
+        "age": 23,
+        "course": "Java"
+    },
+    {
+        "name": "prabhu",
+        "age": 27,
+        "course": ".net"
+    }
+]
