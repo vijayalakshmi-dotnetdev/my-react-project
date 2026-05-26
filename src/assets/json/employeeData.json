@@ -1,0 +1,18 @@
+{
+    "name": "saravanan",
+    "age": 27,
+    "work": "Tata consultancy services",
+    "location": "Chennai",
+    "address" : {
+        "street" :"1 st cross st",
+        "area" : "velachery",
+        "city": "chennai",
+        "pincode" : 600042
+    },
+    "salary" : {
+        "basic" : 2000,
+        "hra" : 4000,
+        "Pf" : 200
+    }
+}
+
