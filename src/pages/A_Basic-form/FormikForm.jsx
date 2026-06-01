@@ -8,8 +8,9 @@ export default function FormikForm() {
             <h1>Formik Form</h1>
             <Formik
                 initialValues={{ username: "", password: "" }}
-                onSubmit={(values) => {
+                onSubmit={(values,{resetForm}) => {
                     console.log(values);
+                    resetForm();
                 }}
                 validationSchema={Yup.object({
                     username: Yup.string()
