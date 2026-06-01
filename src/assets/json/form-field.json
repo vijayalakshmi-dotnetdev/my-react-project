@@ -1,0 +1,60 @@
+[
+    {
+        "fieldLabel"  :  "User Name",
+        "fieldType"   :  "text",
+        "fieldName"   :  "username",
+        "fieldId"     : "username",
+        "fieldClass"  :  "",
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : ""
+    },
+    {
+        "fieldLabel"  :  "Password",
+        "fieldType"   :  "text",
+        "fieldName"   :  "password",
+        "fieldId"     : "username",
+        "fieldClass"  :  "",
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : ""
+    },
+
+
+    {
+        "fieldLabel"  :  "Temporary address",
+        "fieldType"   :  "textarea",
+        "fieldName"   :  "tempaddress",
+        "fieldId"     : "tempaddress",
+        "fieldClass"  :  "",
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : ""
+    },
+
+     {
+        "fieldLabel"  :  "Parmanent address",
+        "fieldType"   :  "textarea",
+        "fieldName"   :  "permanat-address",
+        "fieldId"     : "tempaddress",
+        "fieldClass"  :  "",
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : ""
+    },
+    {
+        "fieldLabel"  :  "Country code",
+        "fieldType"   :  "select",
+        "fieldName"   :  "countrycode",
+        "fieldId"     : "countrycode",
+        "fieldClass"  :  "",
+        "fieldOption" : ["+91","+92","+93"],
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : ""
+    },
+    {
+        "fieldLabel"  :  "",
+        "fieldType"   :  "submit",
+        "fieldName"   :  "Login",
+        "fieldId"     : "login",
+        "fieldClass"  :  "",
+        "fieldEnable" :  true,
+        "fieldDefaultValue" : "Login"
+    }
+]
