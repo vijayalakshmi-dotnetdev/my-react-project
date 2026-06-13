@@ -14,14 +14,18 @@ import LifecycleMethods from './pages/Lifecycle-methods/lifecycleMethods';
 import UseEffect1 from './pages/useEffect_example/useEffect1';
 import MountingPhase from './pages/SideEffects/mountingPhase';
 import Parent from './pages/SideEffects/unmountingPhase/Parent';
-import Products from './pages/SideEffects/Products';
+import Products from './pages/Products/Products';
 import RoutingOutlet from './router/RoutingOutlet';
+import Counter from './pages/Counter/Counter';
+
+
+import { Provider } from 'react-redux';
+import {store} from './Store/store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-   <RoutingOutlet />
-
-);
+   <Provider store={store}>
+      <Counter />
+   </Provider>);
 
