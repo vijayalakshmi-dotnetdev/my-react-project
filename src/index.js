@@ -17,6 +17,7 @@ import Parent from './pages/SideEffects/unmountingPhase/Parent';
 import Products from './pages/Products/Products';
 import RoutingOutlet from './router/RoutingOutlet';
 import Counter from './pages/Counter/Counter';
+import Loandata from './pages/LoanData/loandata';
 
 
 import { Provider } from 'react-redux';
@@ -26,6 +27,7 @@ import {store} from './Store/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <Provider store={store}>
-      <Counter />
+      <Counter/>
+      <Loandata />
    </Provider>);
 

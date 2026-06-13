@@ -2,23 +2,33 @@ import { createSlice } from "@reduxjs/toolkit";
 
 export const counterSlice = createSlice({
     name: "counter-app",
-    initialState: {
-        count: 0
-    },
+    initialState: {},
     reducers: {
-        add: (state, action) => {
-            state.count += 1
+        calculate: (state, action) => {
+            const { first, second, operator } = action.payload;
+            switch (operator) {
+                case '+':
+                    state.result = first + second;
+                    break;
+                case '-':
+                    state.result = first - second;
+                    break;
+                case '*':
+                    state.result = first * second;
+                    break;
+                case '/':
+                    if (second == 0)
+                        state.result = 'Cannot divide by 0';
+                    else
+                        state.result = first - second;
+                    break;
+
+            }
         },
-        sub: (state, action) => {
-            state.count -= 1
-        },
-        addBy10: (state, action) => {
-            console.log("action==>",action)
-            state.count += action.payload.input
-        }
+        clearResult: (state) => { state.result = '' }
     }
 
 })
 
-export const { add,sub,addBy10 } = counterSlice.actions;
+export const { calculate, clearResult } = counterSlice.actions;
 export default counterSlice.reducer;
